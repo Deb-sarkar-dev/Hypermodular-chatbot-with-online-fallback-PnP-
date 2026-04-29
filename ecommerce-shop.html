@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear Electronics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .product-status {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .status-in-stock { color: #27ae60; }
+        .status-out-of-stock { color: #c0392b; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechGear Electronics</h1>
+        <p>Your one-stop shop for the latest gadgets</p>
+    </header>
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-title">Quantum X1 Premium Laptop</div>
+                <div class="product-price">$1,499.99</div>
+                <p>The Quantum X1 features a 14-inch OLED display, 16GB RAM, and a blazing fast 1TB NVMe SSD. Perfect for professionals and creators.</p>
+                <div class="product-status status-in-stock">Availability: In Stock (15 units)</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-title">SonicPro Noise-Cancelling Headphones</div>
+                <div class="product-price">$249.00</div>
+                <p>Experience pure audio with industry-leading active noise cancellation. Up to 30 hours of battery life.</p>
+                <div class="product-status status-out-of-stock">Availability: Out of Stock (Expected next week)</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-title">PixelVision 4K Smart TV</div>
+                <div class="product-price">$799.00</div>
+                <p>55-inch UHD TV with HDR10+ support and built-in streaming apps. Includes voice remote.</p>
+                <div class="product-status status-in-stock">Availability: In Stock (3 units)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inject Chat Widget -->
+    <script src="http://localhost:5000/static/chat-widget.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llama 3.2**. This project provides a plug-and-play JavaScript chat widget that can be embedded into any website to instantly create a context-aware virtual assistant.
 
-## ✨ Features
+## Features
 
 - **Zero-Config Ingestion**: The JS widget automatically scrapes the visual text of the host website and sends it to the backend. It bypasses captchas and login walls because it reads exactly what the user sees in their DOM.
 - **Context-Aware RAG**: Uses ChromaDB to store website content locally, organized by domain, ensuring the AI only answers questions relevant to the specific site it's embedded on.
@@ -11,7 +11,7 @@ An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llam
 - **User Feedback Loop**: Users can rate AI responses with Thumbs Up/Down. Positive feedback stores the Q&A pair in the vector database, enabling the model to learn and improve its answers over time.
 - **Offline & Local Testing Support**: Fully supports `file:///` URLs, making it easy to test on local HTML files without needing a web server for the frontend.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Backend framework**: Python / Flask
 - **LLM**: Llama 3.2 (via Ollama & Langchain)
@@ -19,7 +19,7 @@ An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llam
 - **Embeddings**: Sentence-Transformers (`all-MiniLM-L6-v2`)
 - **Frontend**: Vanilla JavaScript & CSS (Glassmorphism design)
 
-## 📋 Prerequisites
+## Prerequisites
 
 1. **Python 3.8+** installed.
 2. **Ollama** installed on your system.
@@ -28,7 +28,7 @@ An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llam
    ollama run llama3.2
    ```
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 1. **Clone or navigate to the repository folder:**
    ```bash
@@ -56,7 +56,7 @@ An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llam
    ```
    *The backend will run on `http://localhost:5000`.*
 
-## 🧪 How to Use & Test Locally
+## How to Use & Test Locally
 
 1. Ensure the Flask server and Ollama are running.
 2. Open the included `ecommerce-shop.html` file directly in your web browser (you can just double-click it).
@@ -66,7 +66,7 @@ An Object-Oriented Retrieval-Augmented Generation (RAG) system powered by **Llam
 6. **Test Persistence:** Ask the exact same general question again. The system will retrieve the answer instantly from your local ChromaDB memory instead of making another Wikipedia API request.
 7. **Test Feedback:** Click the "👍" button on an AI response to store that interaction in the system's memory for future use.
 
-## 🌐 Deploying to Production
+##  Deploying to Production
 
 To use this on a live website on the internet:
 1. Deploy the Python backend (including ChromaDB and Ollama) to a cloud provider (e.g., AWS, Render, DigitalOcean).
